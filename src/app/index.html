@@ -1,0 +1,42 @@
+<button onclick="solvePuzzle()">Solve</button>
+<button onclick="newPuzzle()">New Puzzle</button>
+<div id="result"></div>
+<div id="nodes"></div>
+<div id="wrapper"></div>
+<script src="PriorityQueue.js"></script>
+<script src="AI.js"></script>
+<script src="Game.js"></script>
+
+<script>
+    var game = new Game();
+    function newPuzzle() {
+        game = new Game();
+    }
+
+    function solvePuzzle() {
+        game.solvePuzzle();
+    }
+</script>
+<style>
+    #wrapper {
+        margin: auto;
+        height: 50vh;
+        width: 50vw;
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+
+    }
+
+    .tile {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        line-height: 150px;
+        border: 1px solid black;
+    }
+
+    .empty {
+        background-color: black;
+    }
+</style>
