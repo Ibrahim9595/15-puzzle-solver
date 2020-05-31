@@ -7,4 +7,4 @@ This simple app generate a random 15 puzzle and solve it using a simple heuristi
 2. `cd 15-puzzle-solver`
 3. `npm install`
 4. `npm start`
-5. `open the browser to http://localhost:8000`
+5. `open the browser to http://localhost:8080`
